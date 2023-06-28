@@ -101,7 +101,15 @@ function getChar(index){
   return CHAR_CODES[index]
 }
 
-console.log(getChar(33));
+// console.log(getChar(33));
 
 
 // const getChar = c => String.fromCharCode(c);
+
+function get_Char(c){
+    var char = " !\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~";
+    
+    return char[c-32];
+}
+
+console.log(get_Char(33));
